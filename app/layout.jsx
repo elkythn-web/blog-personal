@@ -1,8 +1,9 @@
 import { Chakra_Petch } from "next/font/google"
 import NavBar from "@/components/NavBar"
+import Footer from "@/components/Footer"
 import './globals.css'
 
-export const chakra_petch = Chakra_Petch({ weight: '400', subsets: ['latin'] })
+const chakra_petch = Chakra_Petch({ weight: '400', subsets: ['latin'] })
 
 export const metadata = {
   title: 'Blog - Elkin Portillo',
@@ -11,10 +12,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={chakra_petch.className}>
+    <html lang="en" className=" bg-[#000] ">
+      <body className={chakra_petch.className} >
         <NavBar />
         {children}
+        <Footer />
         </body>
     </html>
   )
