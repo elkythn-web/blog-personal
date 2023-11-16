@@ -6,7 +6,7 @@ const Footer = () => {
   const links = dataFooter;
 
   return (
-    <footer className="p-4 md:p-8 lg:p-10 text-white ">
+    <footer className=" py-2 text-white ">
       <div className="mx-auto max-w-screen-xl text-center">
         <Link
           href="/"
