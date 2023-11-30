@@ -1,4 +1,4 @@
-import { faFacebook, faInstagram, faYoutube, faTiktok, faTwitch } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram, faYoutube, faTiktok, faTwitch, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export const dataFooter = [
     {
@@ -25,6 +25,11 @@ export const dataFooter = [
         id: 5,
         link: 'https://www.twitch.tv/',
         icon: faTwitch
+    },
+    {
+        id: 6,
+        link: 'https://www.linkedin.com/',
+        icon: faLinkedin
     }
 
 ]

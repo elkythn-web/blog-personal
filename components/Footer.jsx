@@ -38,7 +38,7 @@ const Footer = () => {
           <a href="#" className="hover:underline">
             Hecho con ❤️ por Elkin Portillo
           </a>
-          . Todos los derechos reservados.
+          .
         </span>
       </div>
     </footer>
