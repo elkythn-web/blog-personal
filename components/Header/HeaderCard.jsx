@@ -1,6 +1,8 @@
+"use client";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { FaCss3, FaReact } from "react-icons/fa";
 import { DiJavascript } from "react-icons/di";
+import Card from "@/components/Header/Card";
 
 export const dataHeaderCategoryCard = [
     {
@@ -30,8 +32,8 @@ export const dataHeaderCategoryCard = [
         href: "#",
         Icon: DiJavascript,
         IconColor: "text-[#F7DF1E]",
-        bgGradientFrom: "from-[#f2dc39]",
-        bgGradientTo: "to-[#d2ba06]",
+        bgGradientFrom: "from-[#ceb817]",
+        bgGradientTo: "to-[#e7d447]",
     },
     {
         id: 4,
@@ -40,8 +42,37 @@ export const dataHeaderCategoryCard = [
         href: "#",
         Icon: FaReact,
         IconColor: "text-[#61DBFB]",
-        bgGradientFrom: "from-[#61dbfb]",
-        bgGradientTo: "to-[#0d47a1]",
+        bgGradientFrom: "from-[#61DBFB]",
+        bgGradientTo: "to-[#61DBFB]",
     },
 ];
 
+const HeaderCard = () => {
+  const dataCard = dataHeaderCategoryCard;
+  return (
+    <div className=" p-4 px-6 sm:px-10 md:px-14 lg:px-20 flex items-center justify-center ">
+      <div>
+        <p className="text-xl font-semibold mb-2 text-center text-[#FB2576] ">
+          Tecnologias
+        </p>
+        <div className="grid gap-4 grid-cols-2 lg:grid-cols-4 items-start">
+          {dataCard.map((card) => (
+            <Card
+              key={card.id}
+              id={card.id}
+              title={card.title}
+              subtitle={card.subtitle}
+              Icon={card.Icon}
+              href={card.href}
+              IconColor={card.IconColor}
+              bgGradientFrom={card.bgGradientFrom}
+              bgGradientTo={card.bgGradientTo}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default HeaderCard;

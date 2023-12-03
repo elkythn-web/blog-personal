@@ -34,7 +34,7 @@ const Header = () => {
                   <BubbleText />
                   </div>
                 </div>
-                <p className="max-w-[600px] text-zinc-200 md:text-xl dark:text-zinc-100 mx-auto">
+                <p className="max-w-[600px] text-zinc-200 mx-auto">
                   Nos apaciona la tecnología y queremos compartir contigo todo
                   lo que sabemos.
                 </p>
@@ -55,7 +55,7 @@ const Header = () => {
                     Unirte
                   </button>
                 </form>
-                <p className="text-xs text-zinc-200 dark:text-zinc-100">
+                <p className="text-xs text-zinc-200 ">
                   Unite a nuestra comunidad y recibe las últimas noticias.
                 </p>
               </div>

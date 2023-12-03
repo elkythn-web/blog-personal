@@ -1,6 +1,6 @@
-import Header from "@/components/Header";
+import Header from "@/components/Header/Header";
 import DataCard from "@/components/DataCard";
-import HeaderCard from "@/components/HeaderCard";
+import HeaderCard from "@/components/Header/HeaderCard";
 
 const Home = () => {
   return (

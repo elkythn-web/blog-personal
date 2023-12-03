@@ -43,7 +43,7 @@ const BubbleText = () => {
   }, []);
 
   return (
-    <h1 className=" hover-text font-thin text-2xl sm:text-4xl xl:text-5xl/none text-[#FB2576] ">
+    <h1 className=" hover-text font-thin text-2xl sm:text-4xl xl:text-5xl text-[#FB2576] ">
       <Text>Todos sobre la tecnología los tenemos en un solo lugar.</Text>
     </h1>
   );
